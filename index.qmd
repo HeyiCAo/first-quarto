@@ -1,0 +1,92 @@
+---
+title: "My Name Is Heyi. If I Were a Package I'd Be NumPy"
+author: "Heyi Cao"
+date: today
+keywords: [quarto, reproducibility, personal introduction, NumPy]
+status: "Draft"
+abstract: |
+  This manuscript introduces who I am, my interests, and what I hope to learn from this course.
+format:
+  html:
+    toc: true
+    number-sections: true
+  pdf:
+    toc: true
+    number-sections: true
+  docx:
+    toc: true
+    number-sections: true
+format-links:
+  - html
+  - format: pdf
+    text: Download PDF
+    icon: file-pdf
+  - format: docx
+    text: Download Word
+    icon: file-word
+bibliography: references.bib
+---
+
+# Who I Am
+
+I’m Heyi Cao, a student at UW–Madison studying computer science. Although computer science is my main academic focus, many of my interests also involve visual and creative work, especially photography, aviation, and 3D design.
+
+I am taking this course because I want to build the skills necessary for future research. In particular, I hope to learn how to approach problems in a more systematic way: identifying a question, collecting and organizing evidence, testing possible explanations, and communicating results clearly. I also want to become more comfortable with tools and workflows that support reproducible research, so that my work can be understood, checked, and built upon by others.
+
+# If I Were a Package
+If I were a Python package, I would be `NumPy`.
+According to the [official NumPy documentation](https://numpy.org/doc/stable/), NumPy is a fundamental package for scientific computing in Python [@numpydocs].
+
+1. I identify with it because it provides a **foundation** for many different kinds of work:
+    - data analysis
+    - scientific computing
+    - machine learning.
+2. NumPy has also become an important foundation for scientific computing in the Python ecosystem [@harris2020array]. I also value building strong fundamentals and creating something that others can use as a foundation for their own work.
+
+::: {.callout-note}
+## Why NumPy?
+
+I like the idea of creating tools that can become a *foundation* for other people's work.
+:::
+
+# NumPy Demonstration
+
+```{python}
+#| label: fig-numpy-wave
+#| fig-cap: "A sine wave generated using NumPy."
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(0, 2 * np.pi, 100)
+y = np.sin(x)
+
+plt.plot(x, y)
+plt.xlabel("x")
+plt.ylabel("sin(x)")
+plt.show()
+```
+As shown in @fig-numpy-wave, NumPy can generate and transform numerical data that can then be visualized clearly.
+
+## Working with Arrays
+
+```{python}
+#| label: tbl-numpy-summary
+#| tbl-cap: "Summary statistics calculated using NumPy."
+
+values = np.array([4, 7, 9, 12, 15])
+
+
+statistics = {
+    "Statistic": ["Mean", "Minimum", "Maximum"],
+    "Value": [
+        np.mean(values),
+        np.min(values),
+        np.max(values)
+    ]
+}
+
+import pandas as pd
+pd.DataFrame(statistics)
+```
+@tbl-numpy-summary shows the max, mean, and min values of the given array.^[The original values are not shown.]
