@@ -1,1 +1,0 @@
-{"entries":[{"caption":"Summary statistics calculated using NumPy.","key":"tbl-numpy-summary","order":{"number":1,"section":[3,1,0,0,0,0,0]}},{"caption":"A sine wave generated using NumPy.","key":"fig-numpy-wave","order":{"number":1,"section":[3,0,0,0,0,0,0]}}],"headings":["who-i-am","if-i-were-a-package","numpy-demonstration","working-with-arrays"]}

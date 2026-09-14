@@ -44,7 +44,7 @@ According to the [official NumPy documentation](https://numpy.org/doc/stable/), 
 2. NumPy has also become an important foundation for scientific computing in the Python ecosystem [@harris2020array]. I also value building strong fundamentals and creating something that others can use as a foundation for their own work.
 
 ::: {.callout-note}
-## Why NumPy?
+### Why NumPy?
 
 I like the idea of creating tools that can become a *foundation* for other people's work.
 :::
